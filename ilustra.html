@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Metrophobic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Metrophobic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>Projetos - Arte Digital e Animação</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        .gif {
+            max-width: 800px;
+            margin-left: 350px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="lista">
+                <a href="pagina-home.html" class="logo">
+                    <img src="logotipo.png" alt="Logotipo de Rina - Designer">
+                </a>   
+                <li>
+                    <a href="pagina-rina.html"class="botao-dois">RINA - DESIGNER</a></li>
+                <li>
+                    <a href="pagina-karina.html"class="botao-dois">KARINA - PERSONA</a></li>
+                <li>
+                    <a href="projetos.html"class="botao-dois">PROJETOS</a></li>
+                <li>
+                    <a href="contato.html"class="botao-dois">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <div class="conteiner">
+        <div class="video-background">
+        <video autoplay muted loop playsinline>
+        <source
+        src="video-background.mp4"
+        type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        </div>
+        <video class="video-titulo" autoplay muted>
+            <source src="titulo.ilustra.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <div class="content">
+        
+            
+        <div class="text-conteiner">
+           
+            <video autoplay muted loop playsinline class="montagem">
+            <source src="video-ilustra.mp4" type="video/mp4">
+            </video>
+
+            <p class="text-banners">
+                <br><br><br><br><br>
+                Ilustrar, desenhar e colorir tem feito parte da minha vida desde minha infancia. Minhas obras são feitas com Illustrator, Clip Studio ou Photoshop para criar ilustrações em estilos mais minimalistas ou detalhados, infantis ou adultos, comerciais ou decorativos.
+                Adoro analisar cores, texturas e traços para criar artes que contam histórias e transmitem emoções. 
+                <br>
+                <br>
+                Illustrating, drawing and coloring have been part of my life since I was a child. My works are made with Illustrator, Clip Studio or Photoshop to create illustrations in more minimalist or detailed styles, for children or adults, commercial or decorative.
+                I love analyzing colors, textures and lines to create art that tells stories and conveys emotions.
+<br><br><br><br><br>
+                
+            </p>      
+    </div>
+
+    <img src="cueio.gif" alt="Coelho saltitante" class="gif">
+    <br>
+    <img src="pera.gif" alt="Walk Cycle" class="gif">
+
+       </div> 
+
+       <button class="botao-topo" id="botaotopo" onclick="voltaraotopo()">Voltar ao Topo</button>
+
+       <script>
+           window.onscroll = function() {
+           const botao = document.getElementById('botaotopo');
+           if (document.documentElement.scrollTop> 100) {
+               botao.style.display = "block";
+               } else {
+                   botao.style.display = "none"
+               }
+           };
+
+           function voltaraotopo () {
+               window.scrollTo({ top: 0, behavior: 'smooth'});
+           }
+       </script>
+
+       
+       <footer>
+        <a href="https://www.behance.net/rina_art"><img src="icone-behance.webp" width="40px" alt="icone do behance" ></a>
+        <a href="https://www.instagram.com/rina_puce_pink"><img src="icone-insta.png" width="40px" alt="icone do instagram"></a>
+        <a href="https://www.linkedin.com/in/karina-santos-9a9a9a97/"><img src="icone-linkedin.webp" width="40px" alt="icone linkedin"></a>
+        <a href="https://www.canva.com/design/DAGjb2WKS_E/bZHB0YNEfcgyJkx_ytWNTQ/edit" class="botao"><p>CV - Resume</p></a>
+    </footer>
+</body>
+</html>

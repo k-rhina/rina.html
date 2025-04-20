@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Metrophobic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Metrophobic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>Projetos - Edição de Vídeo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="lista">
+                <a href="pagina-home.html" class="logo">
+                    <img src="logotipo.png" alt="Logotipo de Rina - Designer">
+                </a>   
+                <li>
+                    <a href="pagina-rina.html"class="botao-dois">RINA - DESIGNER</a></li>
+                <li>
+                    <a href="pagina-karina.html"class="botao-dois">KARINA - PERSONA</a></li>
+                <li>
+                    <a href="projetos.html"class="botao-dois">PROJETOS</a></li>
+                <li>
+                    <a href="contato.html"class="botao-dois">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <div class="conteiner">
+        <div class="video-background">
+        <video autoplay muted loop playsinline>
+        <source
+        src="video-background.mp4"
+        type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        </div>
+        <video class="video-titulo" autoplay muted>
+            <source src="titulo.video.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <div class="content">
+        <div class="jantar">
+        <iframe
+            width="820" 
+            height="515" 
+            src="https://www.youtube.com/embed/6HiBRMWiWiM?si=7ZNuuq6XrSu4a_rd&amp;controls=0" 
+            title="Almoço Secreto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="text-conteiner">
+           
+            <p class="texto-jantar">
+                Este vídeo foi criado  para registro do evento de formação da turma de gastronomia e Organização de Eventos, Senac Sp, 2024. Tive o prazer de atuar na captação das imagens e edição do vídeo. O tema do evento era Halloween, inspirado na obra literária de Raphael Montes: O Jantar Secreto.
+                <br>
+                <br>
+                This video was created to record the training event for the gastronomy and Event Organization class, Senac Sp, 2024. I had the pleasure of working on capturing the images and editing the video. The theme of the event was Halloween, inspired by the literary work of Raphael Montes: The Secret Dinner.
+                
+            </p>
+        
+        
+    </div>
+
+    <div>
+        <p class="text-baixo">
+          
+        </p>
+    </div>
+    </div> 
+
+    <button class="botao-topo" id="botaotopo" onclick="voltaraotopo()">Voltar ao Topo</button>
+
+    <script>
+        window.onscroll = function() {
+        const botao = document.getElementById('botaotopo');
+        if (document.documentElement.scrollTop> 100) {
+            botao.style.display = "block";
+            } else {
+                botao.style.display = "none"
+            }
+        };
+
+        function voltaraotopo () {
+            window.scrollTo({ top: 0, behavior: 'smooth'});
+        }
+    </script>
+    
+    <footer>
+        <a href="https://www.behance.net/rina_art"><img src="icone-behance.webp" width="40px" alt="icone do behance" ></a>
+        <a href="https://www.instagram.com/rina_puce_pink"><img src="icone-insta.png" width="40px" alt="icone do instagram"></a>
+        <a href="https://www.linkedin.com/in/karina-santos-9a9a9a97/"><img src="icone-linkedin.webp" width="40px" alt="icone linkedin"></a>
+        <a href="https://www.canva.com/design/DAGjb2WKS_E/bZHB0YNEfcgyJkx_ytWNTQ/edit" class="botao"><p>CV - Resume</p></a>
+    </footer> 
+</body>
+</html>
