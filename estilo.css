@@ -280,7 +280,7 @@ footer{
     font-weight:200;
     text-align:justify;
     margin-left:15vw;
-    margin-top:6vh;
+    margin-top:3.5vh;
     line-height:1.5}
     
 .eu{
@@ -335,6 +335,7 @@ footer{
         width:27vw;
         height:85vh;
         min-width: fit-content;
+        min-height: fit-content;
         margin-top:02vh;
         justify-content: center;
     }   
@@ -342,15 +343,19 @@ footer{
     .montagem-dois{
         width:27vw;
         min-width: fit-content;
+        min-height: fit-content;
         height:85vh;
-        margin-top: 2vh;
-        justify-content: center;}
+        margin-top: 2vh
+        justify-content: center;
+    }
 
-    .slide {
+    .text-slide {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 5vh;
+        padding: 0;
     }
 
            
@@ -362,7 +367,7 @@ footer{
         font-weight:200;
         text-align:justify;
         justify-content: center;
-        margin-left:5vw;
+        margin-left:12vw;
         line-height:1.5}
         
     .jantar{
