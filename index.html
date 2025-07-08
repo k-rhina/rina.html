@@ -1,43 +1,239 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Metrophobic&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Metrophobic&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <title>Rina Soluções Multimídia - Design e Web</title>
+    <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+        </style>
     <link rel="stylesheet" href="estilo.css">
-    
+    <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+ 
 </head>
+
 <body>
-    <header>
-    <nav>
-        <ul class="lista">
-            <li>
-                <a href="pagina-rina.html"class="botao-dois">RINA - DESIGNER</a></li>
-            <li>
-                <a href="pagina-karina.html"class="botao-dois">KARINA - PERSONA</a></li>
-            <li>
-                <a href="projetos.html"class="botao-dois">PROJETOS</a></li>
-            <li>
-                <a href="contato.html"class="botao-dois">CONTATO</a></li>
-        </ul>
+  
+  <div class="logo">
+    <a href="index.html"><img src="logo-rina.png" alt="logotipo Rina" width="200px" height="200px"></a>
+  </div>
+
+  <header class="menu">
+  <nav>    
+    <!-- Botão hamburguer (mobile) -->
+    <button class="hamburguer" id="btn-menu" aria-label="Abrir menu">☰</button>
+
+    <!-- Menu principal -->
+    <div class="links" id="menu-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#bio">Sobre</a>
+
+    <!-- Item com submenu -->
+    <div class="item-com-submenu">
+    <a href="#" class="projetos-toggle">Projetos<svg class="seta-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none">
+    <path d="M6 9l6 6 6-6" stroke="#86072d" stroke-width="2" fill="none"/></svg></a>
+      <div class="submenu">
+        <a href="design.html">Design Gráfico</a>
+        <a href="arte.html">Arte Digital</a>
+        <a href="motion.html">Motion Design</a>
+        <a href="edicao.html">Edição de Fotos</a>
+        <a href="identidade.html">Identidade Visual</a></div>
+    </div>
+    <a href="index.html#final">Contato</a></div>
+  </nav>
+  </header>
+
+    <div class= "fundo">
+        <img src="interface.jpg" alt="background" width="100%" height="100%">
+        </div>
+
+    <main class="conteudo">
+        <img src="interface2.jpg" alt="Fundo mobile" class="mobile-fundo">
+        
+        <div class= ola>   
+            <p>
+                Olá! Meu nome é Rina.
+                Movimento ideias, desenho emoções e dou cor ao invisível.
+                Esta é minha casinha digital. 
+                Pegue um café e fique à vontade.
+                                
+            </p>
+        </div>
+
+    
+    <a href="https://www.canva.com/design/DAGjb2WKS_E/EBd_wjp_-xWYGIBP5YscEw/view?utm_content=DAGjb2WKS_E&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h130caaaec9" class="cta2" target="_blank">Currículo</a>
+    <a href="https://umapenca.com/kimtee/" class="loja" target="_blank">Lojinha</a>
+
+  
+    <div class= "bio">
+        <p>
+            <div id="bio"></div>
+            <h3>Sobre mim</h3>
+            Olá! Eu sou a Rina — designer gráfica e ilustradora apaixonada por criar. Nascida e criada em São Paulo, carrego comigo o ritmo da cidade: intenso, caótico, cheio de sons, histórias e contrastes. Hoje, atuo profissionalmente com design gráfico, motion, animações, arte digital e interface. Mas minha curiosidade e paixão pela criação vão além: também experimento pintura, costura, moda, artesanato — tudo o que me permite expressar ideias e emoções de forma visual. Criar é meu propósito, minha linguagem e minha forma de dar cor ao mundo.
+        </p>
+    </div>
+  
+
+    <div class= "projetos">
+        <p>
+            Aqui estão alguns dos meus projetos mais recentes. Cada um deles é uma expressão única da minha visão e criatividade. Espero que goste!
+            <div id="projetos"></div>
+        </p>
+    </div>
+
+ <div class="carrossel" id="carrossel">
+    <div class="galeria">
+    <div class="slide ativo"><a href="arte.html"><img src="imagens/slider/pitanga.jpg" alt="Slide 1"></a><p class="legenda">Arte Digital</p></div>
+    <div class="slide"><a href="identidade.html"><img src="imagens/slider/matraca.jpg" alt="Slide 2"></a><p class="legenda">Identidade Visual</p></div>
+    <div class="slide"><a href="design.html"><img src="imagens/slider/banner horizontal.png" alt="Slide 3"></a><p class="legenda">Design de Produto</p></div>
+    <div class="slide"><a href="design.html"><img src="imagens/slider/ballet.png" alt="Slide 4"></a><p class="legenda">Banner Comercial</p></div>
+    <div class="slide"><a href="edicao.html"><img src="imagens/slider/edicao.jpg" alt="Slide 5"></a><p class="legenda">Edição de Fotos</p></div>
+  </div>
+
+  <button class="voltar">&#10094;</button>
+  <button class="avancar">&#10095;</button>
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const avancar = document.querySelector('.avancar');
+  const voltar = document.querySelector('.voltar');
+  const carrossel = document.getElementById('carrossel');
+
+  let indice = 0;
+  let intervalo;
+
+  function mostrarSlide(i) {
+    slides.forEach((s, idx) => s.classList.remove('ativo'));
+    slides[i].classList.add('ativo');
+  }
+
+  function proximoSlide() {
+    indice = (indice + 1) % slides.length;
+    mostrarSlide(indice);
+  }
+
+  function slideAnterior() {
+    indice = (indice - 1 + slides.length) % slides.length;
+    mostrarSlide(indice);
+  }
+
+  function iniciarAutoPlay() {
+    intervalo = setInterval(proximoSlide, 5000);
+  }
+
+  function pararAutoPlay() {
+    clearInterval(intervalo);
+  }
+
+  avancar.addEventListener('click', () => {
+    proximoSlide();
+    pararAutoPlay();
+    iniciarAutoPlay();
+  });
+
+  voltar.addEventListener('click', () => {
+    slideAnterior();
+    pararAutoPlay();
+    iniciarAutoPlay();
+  });
+
+  carrossel.addEventListener('mouseenter', pararAutoPlay);
+  carrossel.addEventListener('mouseleave', iniciarAutoPlay);
+
+  // Início
+  mostrarSlide(indice);
+  iniciarAutoPlay();
+</script>
+
+</div>
+
+
+    <div class= "mais-projetos">
+        <p>
+            Quer conhecer mais projetos?<br>
+            Navegue pelos atalhos e descubra mais sobre minha identidade visual, arte digital, design gráfico, animação e motion design.
+        </p>
+    </div>
+</section>
+
+<div class="projetinhos">
+    <nav> 
+             
+        <div class="atalhos">
+          <a href="identidade.html" class="atalho 1">Identidade Visual</a>
+          <a href="arte.html" class="atalho 2">Arte Digital</a>
+          <a href="design.html" class="atalho 3">Design Gráfico</a>
+          <a href="edicao.html" class="atalho 4">Edição de Fotos e Vídeo</a>
+          <a href="motion.html" class="atalho 5">Motion Design e Animação</a>
+        </div>
     </nav>
-</header>
-<main>
-            <video autoplay muted loop playsinline>
-            <source
-            src="video-home.mp4"
-            type="video/mp4">
-        </video>
-</main>
-    <footer>
-        <a href="https://www.behance.net/rina_art"><img src="icone-behance.webp" width="40px" alt="icone do behance" ></a>
-        <a href="https://www.instagram.com/rina_puce_pink"><img src="icone-insta.png" width="40px" alt="icone do instagram"></a>
-        <a href="https://www.linkedin.com/in/karina-santos-9a9a9a97/"><img src="icone-linkedin.webp" width="40px" alt="icone linkedin"></a>
-        <a href="https://www.canva.com/design/DAGjb2WKS_E/bZHB0YNEfcgyJkx_ytWNTQ/edit" class="botao"><p>CV - Resume</p></a>
-    </footer>
+</div>
+
+
+    <div class="final">
+
+       
+        <p>Hoje ofereço serviços de design gráfico, motion, animações, arte digital, interface, front-end, edição de vídeo, edição de fotos, entre outros. <div id="final"></div>Se você está procurando alguém para dar vida às suas ideias, entre em contato! </p><p>Vamos conversar sobre como posso ajudar a transformar sua visão em realidade.
+        Você pode me contatar por e-mail ou Whatsapp:</p>
+          <a href="https://wa.me/5511943387174" target="_blank">
+          <img src="imagens/icons/whats.png" alt="WhatsApp" width="60"></a>
+          <a href="mailto:kkdess@gmail.com">
+          <img src="imagens/icons/email.png" alt="Email" width="60"></a>
+        <p>Me siga nas redes sociais! Você pode acompanhar outros trabalhos meus por lá, e sinta-se livre para me enviar mensagens por lá também, será um prazer!</p>
+        
+          <a href="https://www.behance.net/rina_art" target="_blank">
+          <img src="imagens/icons/behance.png" alt="Behance" width="60"></a>
+          <a href="https://www.instagram.com/k_rina_ilustra" target="_blank">
+          <img src="imagens/icons/insta.png" alt="Instagram" width="60"></a>
+          <a href="https://www.tiktok.com/@k_rina_ilustra" target="_blank">
+          <img src="imagens/icons/tiktok.png" alt="TikTok" width="60"></a>
+          <a href="https://www.linkedin.com/in/karina-santos-9a9a9a97" target="_blank"><img src="imagens/icons/linkedin.png" alt="LinkedIn" width="60"></a>
+
+          <p>Foi ótimo lhe receber em minha casinha! Volte sempre!</p>
+    </div>
+
+
+    <div  class="finalzinho">
+        <p>© 2025 Rina Design e Soluções Multimídia. Todos os direitos reservados. <a target="_blank" href="https://icons8.com/icon/eNVlnrYsecPX/envelope">Social media</a> Ícones por <a target="_blank" href="https://icons8.com">Icons8</a></p>
+        <p>Desenvolvido por Rina.</p>
+    </div>
+    
+
+  <button id="btn-topo" title="Voltar ao topo">
+  <img src="imagens/icons/seta-topo.png" alt="Voltar ao topo" />
+</button>
+
+ </main>
+
+<script>
+  const btnTopo = document.getElementById('btn-topo'); 
+  window.addEventListener('scroll', () => { 
+  btnTopo.style.display = window.scrollY > 300 ? 'block' : 'none'; }); 
+  btnTopo.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); 
+});
+
+  const btnMenu = document.getElementById('btn-menu');
+  const menuLinks = document.getElementById('menu-links');
+  const itemProjetos = document.querySelector('.item-com-submenu');
+
+  btnMenu.addEventListener('click', () => {menuLinks.classList.toggle('ativo');
+  });
+
+  itemProjetos.addEventListener('click', () => {
+    itemProjetos.classList.toggle('ativo');  });
+
+  const btnProjetos = document.querySelector('.item-com-submenu .projetos-toggle');
+  const blocoProjetos = document.querySelector('.item-com-submenu');
+
+  btnProjetos.addEventListener('click', (e) => {e.preventDefault(); // evita navegação
+  blocoProjetos.classList.toggle('ativo');});
+
+</script>
+
+ 
+
+
 </body>
+
 </html>
