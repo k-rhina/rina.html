@@ -162,7 +162,7 @@ h2 {
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3),
               -2px -2px 6px rgba(255, 255, 255, 0.8);
   border-radius: 25px;
-  z-index: 1000;
+  z-index: 1250;
 }
 
 .menu:hover {
@@ -751,7 +751,7 @@ button.avancar {
 @media (max-width: 768px) {
     
   .body {
-    background: linear-gradient(135deg, #df517c, #5193be);
+    background: rgb(255, 187, 227);
     height: fit-content;
     font-size: clamp(15px, 4vw, 20px);
   }
@@ -760,7 +760,7 @@ button.avancar {
     width: 20vw;
     height: 30vh;
     left: 2vw;
-    top: 4vh;
+    top: 5.2vh;
   }
 
   .fundo, .fundo1, .fundo2, .fundo3, .fundo4, .fundo5, .fundo6 {
@@ -779,32 +779,32 @@ button.avancar {
   }
 
   .ola {
-    font-size: 4.5vw; 
-    top: 30vh; 
+    font-size: 6vw; 
+    top: 34vh; 
     left: 7vw;
     width: 43vw; 
   }
 
   .cta, .cta2 {
-    padding: 3vh 5vw;
-    font-size: 3.5vw; 
-    top: 85vh; 
+    padding: 3vh 6vw;
+    font-size: 3.7vw; 
+    top: 75vh; 
     left: 6vw;
   }
 
   .loja {
-      font-size: 3.5vw; 
-      padding: 6vh 3.5vw; 
-      top: 450vh; 
-      right: 37vw;
+      font-size: 3.7vw; 
+      padding: 3vh 6vw; 
+      top: 90vh; 
+      left: 6vw;
   }
 
   .bio {
     width: 80vw; 
-    font-size: 3.5vw; 
+    font-size: 3.8vw; 
     top: 104vh; 
     left: 6vw;
-    text-align: center; 
+    text-align: left; 
   }
 
   .intro {
@@ -863,8 +863,8 @@ button.avancar {
 
   .projetos {
     width: 80vw; 
-    font-size: 3.5vw; 
-    top: 190vh; 
+    font-size: 3.8vw; 
+    top: 160vh; 
     left: 6vw;
     padding: 1.5vh 2vw; 
   }
@@ -872,7 +872,7 @@ button.avancar {
   .mais-projetos {
     width: 80vw; 
     font-size: 3.7vw; 
-    top: 255vh; 
+    top: 250vh; 
     left: 6vw;
     padding: 2vh 2vw; 
   }
@@ -880,7 +880,7 @@ button.avancar {
   .projetinhos {
     width: 62vw; 
     font-size: 3.7vw; 
-    top: 300vh; 
+    top: 275vh; 
     left: 15vw;
     padding: 3vh 2vw; 
     height: auto; 
@@ -906,7 +906,7 @@ button.avancar {
   .carrossel {
     width: 90vw; 
     height: 40vh; 
-    top: 212vh; 
+    top: 200vh; 
   }
 
   .galeria {
@@ -927,14 +927,14 @@ button.avancar {
   }
 
   .iframe {
-    width: 75vw; 
-    height: 32vh;  
+    width: 80%; 
+    height: auto;  
  }
 
   .final {
     width: 80vw; 
     font-size: 3.8vw; 
-    top: 340vh; 
+    top: 330vh; 
     left: 6vw;
     padding: 3.5vh 2vw; 
     height: auto; 
@@ -948,25 +948,25 @@ button.avancar {
   }
 
   .finalzinho {
-    top: 460vh; 
+    top: 410vh; 
     left: 6vw;
     margin-bottom: 1vh;
   }
 
   .finalzinho2 {
-    top: 170vh; 
+    top: 150vh; 
     left: 3vw;
     margin-bottom: 1vh;
   }
 
   .finalzinho3 {
-    top: 210vh; 
+    top: 170vh; 
     left: 3vw;
     margin-bottom: 1vh;
   }
 
   .finalzinho4 {
-    top: 240vh; 
+    top: 190vh; 
     left: 3vw;
     margin-bottom: 1vh;
   }
@@ -978,7 +978,7 @@ button.avancar {
   }
 
   .finalzinho6 {
-    top: 215vh; 
+    top: 180vh; 
     left: 6vw;
     margin-bottom: 1vh;
   }
