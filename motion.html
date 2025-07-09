@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motion</title>
+    <title>Motion Design</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
         </style>
     <link rel="stylesheet" href="estilo.css">
      <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+
 </head>
 
   <div class="logo">
@@ -24,19 +25,11 @@
     <!-- Menu principal -->
     <div class="links" id="menu-links">
     <a href="index.html">Home</a>
-    <a href="index.html#bio">Sobre</a>
-
-    <!-- Item com submenu -->
-    <div class="item-com-submenu">
-    <a href="#" class="projetos-toggle">Projetos<svg class="seta-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none">
-    <path d="M6 9l6 6 6-6" stroke="#86072d" stroke-width="2" fill="none"/></svg></a>
-      <div class="submenu">
-        <a href="design.html">Design Gráfico</a>
-        <a href="arte.html">Arte Digital</a>
-        <a href="motion.html">Motion Design</a>
-        <a href="edicao.html">Edição de Fotos</a>
-        <a href="identidade.html">Identidade Visual</a></div>
-    </div>
+    <a href="design.html">Design</a>
+    <a href="arte.html">Ilustração</a>
+    <a href="motion.html">Motion</a>
+    <a href="edicao.html">Edição</a>
+    <a href="identidade.html">Branding</a>
     <a href="index.html#final">Contato</a></div>
   </nav>
 </header>
@@ -73,9 +66,9 @@
 </div>
 
 
-    <div  class="finalzinho6">
+    <div class="finalzinho6">
 
-                 <a href="https://www.behance.net/rina_art" target="_blank">
+          <a href="https://www.behance.net/rina_art" target="_blank">
           <img src="imagens/icons/behance.png" alt="Behance" width="60"></a>
           <a href="https://www.instagram.com/k_rina_ilustra" target="_blank">
           <img src="imagens/icons/insta.png" alt="Instagram" width="60"></a>
@@ -91,9 +84,11 @@
   <img src="imagens/icons/seta-topo.png" alt="Voltar ao topo" />
 </button>
 
+
+
 <script>
  
-   const btnTopo = document.getElementById('btn-topo'); 
+  const btnTopo = document.getElementById('btn-topo'); 
   window.addEventListener('scroll', () => { 
   btnTopo.style.display = window.scrollY > 300 ? 'block' : 'none'; }); 
   btnTopo.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); 
