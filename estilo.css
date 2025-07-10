@@ -126,6 +126,10 @@ h2 {
     display: none; 
 }
 
+.fundo-mobile {
+  display: none;
+}
+
 .conteudo {
     position: relative;
     z-index: 1;
@@ -320,7 +324,6 @@ h2 {
 
 .foto-bio {
     float: right;
-    padding: ;
     margin: 0 0 0 0;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(129, 3, 51, 0.2);     
@@ -782,6 +785,17 @@ button.avancar {
     z-index: -1; 
   }
 
+  .fundo-mobile {
+    display: block; 
+    position: absolute;
+    left: 0;
+    top: 410vh;
+    width: 100vw;
+    height: 60vh; 
+    object-fit: cover; 
+    z-index: -1; 
+  }
+
   .ola {
     font-size: 5vw; 
     top: 32vh; 
@@ -876,7 +890,7 @@ button.avancar {
   .mais-projetos {
     width: 80vw; 
     font-size: 3.7vw; 
-    top: 255vh; 
+    top: 240vh; 
     left: 6vw;
     padding: 2vh 2vw; 
   }
@@ -910,7 +924,7 @@ button.avancar {
   .carrossel {
     width: 90vw; 
     height: 40vh; 
-    top: 200vh; 
+    top: 195vh; 
   }
 
   .galeria {
@@ -933,11 +947,11 @@ button.avancar {
   iframe {
     width: 80vw; 
     height: auto;
-    left: 10vw;
     max-width: 100%;
     border: none;
     display: block;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
  }
 
   .final {
@@ -963,31 +977,31 @@ button.avancar {
   }
 
   .finalzinho2 {
-    top: 150vh; 
+    top: 140vh; 
     left: 3vw;
     margin-bottom: 1vh;
   }
 
   .finalzinho3 {
-    top: 170vh; 
+    top: 160vh; 
     left: 3vw;
     margin-bottom: 1vh;
   }
 
   .finalzinho4 {
-    top: 190vh; 
+    top: 180vh; 
     left: 3vw;
     margin-bottom: 1vh;
   }
 
   .finalzinho5 {
-    top: 260vh; 
+    top: 230vh; 
     left: 5vw;
     margin-bottom: 1vh;
   }
 
   .finalzinho6 {
-    top: 180vh; 
+    top: 170vh; 
     left: 6vw;
     margin-bottom: 1vh;
   }
