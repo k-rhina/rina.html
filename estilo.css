@@ -15,7 +15,7 @@ h2 {
     width: 10vw;
     height: 50vh;
     left: 2vw;
-    z-index: 1200;
+    z-index: 1100;
     transition: transform 0.3s ease;
     filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.9));
 }
@@ -162,7 +162,7 @@ h2 {
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3),
               -2px -2px 6px rgba(255, 255, 255, 0.8);
   border-radius: 25px;
-  z-index: 1250;
+  z-index: 1200;
 }
 
 .menu:hover {
@@ -751,16 +751,20 @@ button.avancar {
 @media (max-width: 768px) {
     
   .body {
-    background: rgb(255, 187, 227);
+    background: rgb(235, 196, 226);
     height: fit-content;
     font-size: clamp(15px, 4vw, 20px);
   }
   
+  html, body {
+    background: linear-gradient(100deg, #f8cfe4 0%, #b3e0ff 100%) !important;
+  }
+
   .logo {
     width: 20vw;
     height: 30vh;
     left: 2vw;
-    top: 5.2vh;
+    top: 5.5vh;
   }
 
   .fundo, .fundo1, .fundo2, .fundo3, .fundo4, .fundo5, .fundo6 {
@@ -779,8 +783,8 @@ button.avancar {
   }
 
   .ola {
-    font-size: 6vw; 
-    top: 34vh; 
+    font-size: 4.5vw; 
+    top: 32vh; 
     left: 7vw;
     width: 43vw; 
   }
@@ -788,8 +792,8 @@ button.avancar {
   .cta, .cta2 {
     padding: 3vh 6vw;
     font-size: 3.7vw; 
-    top: 75vh; 
-    left: 6vw;
+    top: 90vh; 
+    left: 37vw;
   }
 
   .loja {
@@ -842,7 +846,7 @@ button.avancar {
 
   .hamburguer {
     display: block;
-    font-size: 3;
+    font-size: 8vw;
     margin-bottom: 1vh;
   }
 
@@ -864,7 +868,7 @@ button.avancar {
   .projetos {
     width: 80vw; 
     font-size: 3.8vw; 
-    top: 160vh; 
+    top: 175vh; 
     left: 6vw;
     padding: 1.5vh 2vw; 
   }
@@ -872,7 +876,7 @@ button.avancar {
   .mais-projetos {
     width: 80vw; 
     font-size: 3.7vw; 
-    top: 250vh; 
+    top: 230vh; 
     left: 6vw;
     padding: 2vh 2vw; 
   }
@@ -880,7 +884,7 @@ button.avancar {
   .projetinhos {
     width: 62vw; 
     font-size: 3.7vw; 
-    top: 275vh; 
+    top: 255vh; 
     left: 15vw;
     padding: 3vh 2vw; 
     height: auto; 
@@ -906,7 +910,7 @@ button.avancar {
   .carrossel {
     width: 90vw; 
     height: 40vh; 
-    top: 200vh; 
+    top: 185vh; 
   }
 
   .galeria {
@@ -934,7 +938,7 @@ button.avancar {
   .final {
     width: 80vw; 
     font-size: 3.8vw; 
-    top: 330vh; 
+    top: 290vh; 
     left: 6vw;
     padding: 3.5vh 2vw; 
     height: auto; 
