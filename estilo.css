@@ -764,7 +764,7 @@ button.avancar {
     width: 20vw;
     height: 30vh;
     left: 2vw;
-    top: 5.5vh;
+    top: 7vh;
   }
 
   .fundo, .fundo1, .fundo2, .fundo3, .fundo4, .fundo5, .fundo6 {
@@ -783,7 +783,7 @@ button.avancar {
   }
 
   .ola {
-    font-size: 4.5vw; 
+    font-size: 5vw; 
     top: 32vh; 
     left: 7vw;
     width: 43vw; 
@@ -792,14 +792,14 @@ button.avancar {
   .cta, .cta2 {
     padding: 3vh 6vw;
     font-size: 3.7vw; 
-    top: 90vh; 
+    top: 80vh; 
     left: 37vw;
   }
 
   .loja {
       font-size: 3.7vw; 
       padding: 3vh 6vw; 
-      top: 90vh; 
+      top: 80vh; 
       left: 6vw;
   }
 
@@ -884,7 +884,7 @@ button.avancar {
   .projetinhos {
     width: 62vw; 
     font-size: 3.7vw; 
-    top: 255vh; 
+    top: 270vh; 
     left: 15vw;
     padding: 3vh 2vw; 
     height: auto; 
@@ -910,7 +910,7 @@ button.avancar {
   .carrossel {
     width: 90vw; 
     height: 40vh; 
-    top: 185vh; 
+    top: 200vh; 
   }
 
   .galeria {
@@ -931,14 +931,15 @@ button.avancar {
   }
 
   .iframe {
-    width: 80%; 
-    height: auto;  
+    width: 80vw; 
+    height: 40vh;
+     
  }
 
   .final {
     width: 80vw; 
     font-size: 3.8vw; 
-    top: 290vh; 
+    top: 305vh; 
     left: 6vw;
     padding: 3.5vh 2vw; 
     height: auto; 
