@@ -876,7 +876,7 @@ button.avancar {
   .mais-projetos {
     width: 80vw; 
     font-size: 3.7vw; 
-    top: 240vh; 
+    top: 255vh; 
     left: 6vw;
     padding: 2vh 2vw; 
   }
@@ -910,7 +910,7 @@ button.avancar {
   .carrossel {
     width: 90vw; 
     height: 40vh; 
-    top: 190vh; 
+    top: 200vh; 
   }
 
   .galeria {
@@ -930,13 +930,14 @@ button.avancar {
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   }
 
-  iframe, .iframe {
+  iframe {
     width: 80vw; 
-    height: 40vh;
+    height: auto;
+    left: 10vw;
     max-width: 100%;
     border: none;
     display: block;
-    border-radius: 10px;
+    justify-content: center;
  }
 
   .final {
