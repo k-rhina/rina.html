@@ -4,7 +4,8 @@ html {
 
 body {
     font-family: poppins, sans-serif;
-   }
+    background: linear-gradient(150deg, #cbb4e9, #dfafdf);
+}
 
 h2 {
   font-family: "Chelsea Market", system-ui;
@@ -231,10 +232,10 @@ h2 {
 }
 
 .cta {
-    padding: 1.5vh 3vw;
+    padding: 2vh 3vw;
     border-radius: 25px;
-    top: 81vh;
-    left: 10vw;
+    top: 165vh;
+    left: 25vw;
     display: inline-block;
     font-size: 1.2vw;
     font-weight: bold;
@@ -441,7 +442,7 @@ h2 {
 
 .projetinhos5 {
     position:absolute;
-    top: 625vh;
+    top: 690vh;
     left: 6vw;
     width: 85%;
     padding: 3vh;
@@ -560,7 +561,7 @@ button.avancar {
     top: 365vh;
     left: 43vw;
     width: 43%;
-    height: 88vh;
+    height: 95vh;
     z-index: 1100;
     line-height: 0.3vh;
     font-size: 1.3vw;
@@ -578,7 +579,7 @@ button.avancar {
 
 .finalzinho {
     position: absolute;
-    top: 467vh;
+    top: 470vh;
     left: 43vw;
     width: 28%;
     height: 15vh;
@@ -666,7 +667,7 @@ button.avancar {
 
 .finalzinho5 {
     position: absolute;
-    top: 647vh;
+    top: 705vh;
     left: 15vw;
     width: 60%;
     height: 24vh;
